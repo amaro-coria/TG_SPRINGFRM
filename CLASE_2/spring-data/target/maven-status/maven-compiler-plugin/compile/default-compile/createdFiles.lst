@@ -1,0 +1,3 @@
+net/tecgurus/main/SpringDataMain.class
+net/tecgurus/persistence/CatalogoDAO.class
+net/tecgurus/persistence/impl/CatalogoDAOImpl.class
