@@ -1,0 +1,8 @@
+net/tecgurus/entities/Cliente.class
+net/tecgurus/entities/MovimientosCuenta.class
+net/tecgurus/persistence/impl/CatalogoDAOImpl.class
+net/tecgurus/entities/CuentasCliente.class
+net/tecgurus/entities/Cuenta.class
+net/tecgurus/main/SpringDataMain.class
+net/tecgurus/entities/CatalogoGeneral.class
+net/tecgurus/persistence/CatalogoDAO.class
