@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2017 01:07:56 PM by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="net.tecgurus.entities.MovimientosCuenta" table="Movimientos_Cuenta" catalog="tec_gurus">
+        <id name="idMovCta" type="java.lang.Integer">
+            <column name="id_mov_cta" />
+            <generator class="identity" />
+        </id>
+        <property name="idCta" type="java.lang.Integer">
+            <column name="id_cta" />
+        </property>
+        <property name="fchCre" type="timestamp">
+            <column name="fch_cre" length="19" />
+        </property>
+        <property name="idTipMov" type="java.lang.Integer">
+            <column name="id_tip_mov" />
+        </property>
+        <property name="mntMov" type="big_decimal">
+            <column name="mnt_mov" precision="20" />
+        </property>
+        <property name="dscMov" type="string">
+            <column name="dsc_mov" length="50" />
+        </property>
+        <property name="folAut" type="string">
+            <column name="fol_aut" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
