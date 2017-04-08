@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2017 01:07:56 PM by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="net.tecgurus.entities.Cliente" table="Cliente" catalog="tec_gurus">
+        <id name="idCte" type="java.lang.Integer">
+            <column name="id_cte" />
+            <generator class="identity" />
+        </id>
+        <property name="nomCte" type="string">
+            <column name="nom_cte" length="30" not-null="true" />
+        </property>
+        <property name="apePatCte" type="string">
+            <column name="ape_pat_cte" length="30" not-null="true" />
+        </property>
+        <property name="apeMatCte" type="string">
+            <column name="ape_mat_cte" length="30" />
+        </property>
+        <property name="telCte" type="string">
+            <column name="tel_cte" length="20" />
+        </property>
+        <property name="dirCte" type="string">
+            <column name="dir_cte" length="200" />
+        </property>
+        <property name="idEdoCte" type="java.lang.Integer">
+            <column name="id_edo_cte" />
+        </property>
+    </class>
+</hibernate-mapping>

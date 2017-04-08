@@ -1,0 +1,16 @@
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/impl/ClienteServiceImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/GenericService.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/web/controller/CatalogoController.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/web/controller/HelloWorldController.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/dto/CatalogoGeneralDTO.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/web/controller/LoginController.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/assembler/ClienteAssembler.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/impl/GenericServiceImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/dto/ClienteDTO.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/assembler/Assembler.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/CatalogoService.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/impl/CatalogoGeneralServiceImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/ClienteService.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/web/controller/ClienteController.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/assembler/CatalogoGeneralAssembler.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_5/security/spring-soba-web/src/main/java/net/tecgurus/service/ServiceException.java

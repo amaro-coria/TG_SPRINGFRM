@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2017 01:07:56 PM by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="net.tecgurus.entities.CuentasCliente" table="Cuentas_Cliente" catalog="tec_gurus">
+        <id name="idCtaCte" type="java.lang.Integer">
+            <column name="id_cta_cte" />
+            <generator class="identity" />
+        </id>
+        <property name="idCta" type="java.lang.Integer">
+            <column name="id_cta" />
+        </property>
+        <property name="idCte" type="java.lang.Integer">
+            <column name="id_cte" />
+        </property>
+        <property name="fchCre" type="timestamp">
+            <column name="fch_cre" length="19" />
+        </property>
+        <property name="idEdoCtaCte" type="java.lang.Integer">
+            <column name="id_edo_cta_cte" />
+        </property>
+        <property name="cmntCtaCte" type="string">
+            <column name="cmnt_cta_cte" length="50" />
+        </property>
+        <property name="idTipCtaCte" type="java.lang.Integer">
+            <column name="id_tip_cta_cte" />
+        </property>
+    </class>
+</hibernate-mapping>

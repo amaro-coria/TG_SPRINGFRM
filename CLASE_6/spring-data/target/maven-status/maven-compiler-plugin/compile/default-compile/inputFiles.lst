@@ -1,0 +1,13 @@
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/main/SpringDataMain.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/entities/Cuenta.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/CatalogoDAO.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/entities/CuentasCliente.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/dao/impl/ClienteDAOImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/entities/MovimientosCuenta.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/impl/CatalogoDAOImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/dao/impl/GenericDAOImpl.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/PersistenceExcepcion.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/entities/CatalogoGeneral.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/entities/Cliente.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/dao/ClienteDAO.java
+/home/amaro/TEC_GURUS/GIT/SPRING/TG_SPRINGFRM/CLASE_4/proyecto_web_mvc/spring-data/src/main/java/net/tecgurus/persistence/dao/GenericDAO.java

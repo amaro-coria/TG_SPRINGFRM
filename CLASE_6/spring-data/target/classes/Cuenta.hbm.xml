@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2017 01:07:56 PM by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="net.tecgurus.entities.Cuenta" table="Cuenta" catalog="tec_gurus">
+        <id name="idCta" type="java.lang.Integer">
+            <column name="id_cta" />
+            <generator class="identity" />
+        </id>
+        <property name="noCta" type="string">
+            <column name="no_cta" length="20" />
+        </property>
+        <property name="idTipCta" type="int">
+            <column name="id_tip_cta" not-null="true" />
+        </property>
+        <property name="fchAlt" type="timestamp">
+            <column name="fch_alt" length="19" not-null="true" />
+        </property>
+        <property name="idEst" type="long">
+            <column name="id_est" not-null="true" />
+        </property>
+        <property name="fchCre" type="timestamp">
+            <column name="fch_cre" length="19" not-null="true" />
+        </property>
+        <property name="fchMod" type="timestamp">
+            <column name="fch_mod" length="19" />
+        </property>
+        <property name="noTar" type="string">
+            <column name="no_tar" length="20" />
+        </property>
+        <property name="blncCta" type="big_decimal">
+            <column name="blnc_cta" precision="20" />
+        </property>
+    </class>
+</hibernate-mapping>

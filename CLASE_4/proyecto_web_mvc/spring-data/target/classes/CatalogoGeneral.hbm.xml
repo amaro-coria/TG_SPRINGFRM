@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2017 01:07:56 PM by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="net.tecgurus.entities.CatalogoGeneral" table="Catalogo_General" catalog="tec_gurus">
+        <id name="idCat" type="java.lang.Integer">
+            <column name="id_cat" />
+            <generator class="identity" />
+        </id>
+        <property name="dscCorCat" type="string">
+            <column name="dsc_cor_cat" length="20" />
+        </property>
+        <property name="dscComCat" type="string">
+            <column name="dsc_com_cat" length="50" />
+        </property>
+        <property name="idEstCat" type="java.lang.Integer">
+            <column name="id_est_cat" />
+        </property>
+        <property name="fchCre" type="timestamp">
+            <column name="fch_cre" length="19" />
+        </property>
+        <property name="fchMod" type="timestamp">
+            <column name="fch_mod" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
