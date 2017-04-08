@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	>
+<h:body>
+	<ui:composition template="/WEB-INF/templates/template.xhtml">
+		<ui:define name="content">
+			<h:form id="form">
+				<p:growl id="growl" sticky="false" autoUpdate="true"
+					showDetail="true" />
+				<p:panel header="Clientes">
+					<p:commandButton icon="ui-icon-plusthick"
+						action="#{cteCtrl.preAddCliente}"
+						oncomplete="PF('dlgNew').show();" value="Nuevo" />
+					<p:commandButton icon="ui-icon-plusthick"
+						onclick="PF('dlgView').show();" update=":formView:panelgrid_view"
+						value="Detalle" />
+
+					<br />
+					<p:dataTable value="#{cteCtrl.listItems}" var="item" rows="10"
+						paginator="true" selectionMode="single"
+						currentPageReportTemplate="{startRecord} de {endRecord}"
+						paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+						rowsPerPageTemplate="5,10,15" paginatorPosition="bottom"
+						selection="#{cteCtrl.currentItem}" rowKey="#{item.idCte}"
+						id="table" widgetVar="table">
+						<p:column headerText="Nombre" sortBy="#{item.nomCte}"
+							filterBy="#{item.nomCte}">
+							<h:outputText value="#{item.nomCte}" />
+						</p:column>
+						<p:column headerText="A. Paterno" sortBy="#{item.apePatCte}"
+							filterBy="#{item.apePatCte}">
+							<h:outputText value="#{item.apePatCte}" />
+						</p:column>
+						<p:column headerText="A. Materno" sortBy="#{item.apeMatCte}"
+							filterBy="#{item.apeMatCte}">
+							<h:outputText value="#{item.apeMatCte}" />
+						</p:column>
+					</p:dataTable>
+				</p:panel>
+			</h:form>
+			<!-- Panel for new -->
+			<p:dialog header="Nuevo" widgetVar="dlgNew" modal="true"
+				style="position:fixed;">
+				<h:form id="formNew">
+					<p:outputPanel id="outputPanelNew">
+						<h:panelGrid columns="3" id="panelgrid_new">
+							<p:outputLabel for="new_input_name" value="Nombre" />
+							<p:inputText value="#{cteCtrl.currentItem.nomCte}"
+								required="true" id="new_input_name" />
+							<p:message for="new_input_name" />
+							<p:outputLabel for="new_input_lname1" value="A. Paterno" />
+							<p:inputText value="#{cteCtrl.currentItem.apePatCte}"
+								required="true" id="new_input_lname1" />
+							<p:message for="new_input_lname1" />
+							<p:outputLabel for="new_input_lname2" value="A. Materno" />
+							<p:inputText value="#{cteCtrl.currentItem.apeMatCte}"
+								required="false" id="new_input_lname2" />
+							<p:message for="new_input_lname2" />
+							<p:outputLabel for="new_input_tel" value="Telefono" />
+							<p:inputText value="#{cteCtrl.currentItem.telCte}"
+								required="false" id="new_input_tel" />
+							<p:message for="new_input_tel" />
+							<p:outputLabel for="new_input_dir" value="Direccion" />
+							<p:inputText value="#{cteCtrl.currentItem.dirCte}"
+								required="false" id="new_input_dir" />
+							<p:message for="new_input_dir" />
+						</h:panelGrid>
+						<h:panelGrid columns="2">
+							<p:commandButton value="Aceptar"
+								oncomplete="handlRequest(xhr, status, args, 'dlgNew')"
+								icon="ui-icon-check" action="#{cteCtrl.addCliente}"
+								update=":form:table :formNew:panelgrid_new" />
+							<p:commandButton value="Cancelar" onclick="PF('dlgNew').hide();"
+								icon="ui-icon-close" immediate="true"
+								actionListener="#{cteCtrl.addClienteCancel}" />
+						</h:panelGrid>
+					</p:outputPanel>
+				</h:form>
+			</p:dialog>
+			<!-- Panel for detail -->
+			<p:dialog header="#{msg_mstr.detail}" modal="true"
+				widgetVar="dlgView" value="#{cctmcata_controller.itemsList}"
+				var="item" style="position:fixed;">
+				<h:form id="formView">
+					<p:outputPanel id="outputPanel_view">
+						<h:panelGrid columns="2" id="panelgrid_view">
+							<p:outputLabel for="view_name" value="Nombre" />
+							<h:outputText id="view_name"
+								value="#{cteCtrl.currentItem.nomCte}" />
+							<p:outputLabel for="view_lname1" value="A. Paterno" />
+							<h:outputText id="view_lname1"
+								value="#{cteCtrl.currentItem.apePatCte}" />
+							<p:outputLabel for="view_lname2" value="A. Materno" />
+							<h:outputText id="view_lname2"
+								value="#{cteCtrl.currentItem.apeMatCte}" />
+							<p:outputLabel for="view_tel" value="Telefono" />
+							<h:outputText id="view_tel" value="#{cteCtrl.currentItem.telCte}" />
+							<p:outputLabel for="view_dir" value="Direccion" />
+							<h:outputText id="view_dir" value="#{cteCtrl.currentItem.dirCte}" />
+						</h:panelGrid>
+						<div style="float: right;">
+							<p:commandButton value="Aceptar" onclick="PF('dlgView').hide();"
+								type="button" icon="ui-icon-check" />
+						</div>
+					</p:outputPanel>
+				</h:form>
+			</p:dialog>
+			
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>
